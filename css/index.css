@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+    /*If you had a black or close to black background*/
+    background-color: #0C0E1A !important;
+}
+
+nav{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    color:white !important;
+    letter-spacing: 2px;
+    margin-left: auto;
+    
+}
+
+a{
+    color: white !important;
+    
+}
+
+h1,h2{
+    color: rgb(208, 214, 249)
+}
+
+p{
+   
+   font-size: 16px;
+}
+
+hr{
+    background:rgb(255, 255, 255)
+}
+
+
+.subhead{
+    font-family: 'Barlow Condensed', sans-serif;
+   
+}
+
+h1{
+    font-family: 'Bellefair', serif;
+    font-size: 150px !important;
+}
+
+.nav-link{
+    color: rgba(255, 255, 255) !important;
+    font-weight: 100;
+   
+}
+
+.number-link{
+    font-weight:800;
+    color: #ffff !important;
+    
+}
+
+.logo{
+    z-index: 1000;
+}
+
+.horizontal-line{
+    width: 700px;
+    border-bottom: 1px solid #ffff;
+    align-self: center;
+    z-index: 1000000 !important;
+
+}
+body{
+    position: relative;
+    background-image: url('assets/home/wallpaperfinal.jpg');
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar-nav{
+    z-index: 99999;
+}
+
+
+
+.explore-link{
+    font-family: 'Bellefair', serif;
+        height:150px;
+        width: 150px;
+        border-radius: 100px !important;
+        z-index: 11111111 !important;
+        opacity: 1 !important;
+        color: black;
+        outline: none;
+        border: none;
+        font-weight: bold;
+       font-size: 20px;
+       animation: pulse 60s infinite;
+       transition: all 1s ease;
+   
+}
+
+.explore-link:hover{
+    outline: rgb(70, 70, 71) solid 30px !important;
+    transition: all 1s ease;
+
+}
+
+.explore-link:active{
+    outline: rgb(142, 142, 145) solid 30px !important;
+  
+}
+
+  @keyframes pulse {
+    0% {
+      background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(223, 223, 226), rgb(63, 63, 65) );
+      outline:rgb(55, 55, 58) solid 12px !important;
+    }
+
+    50% {
+      background: linear-gradient(to bottom, rgb(209, 211, 95) ,rgb(197, 197, 74), rgb(63, 63, 65));
+    }
+
+    100% {
+        background: linear-gradient( rgb(245, 65, 59) ,rgb(179, 72, 65), rgb(63, 63, 65));
+      }
+    }
+
+
+/* NAVBAR HOVER */
+.navbar .navbar-nav .nav-link:hover {
+    color: #000000;
+  }
+  @media only screen and (min-width: 960px) {
+    .navbar .navbar-nav .nav-link {
+      padding: 1em 0.7em;
+    }
+    .navbar {
+      padding: 0;
+    }
+    .navbar .navbar-brand {
+      padding: 0 0.7em;
+    }
+  }
+  .navbar .navbar-nav .nav-link {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fffefe;
+    color: transparent;
+    width: 0%;
+    content: '';
+    height: 3px;
+    transition: all 0.5s;
+  }
+  .navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+/* ----------------------------DESTINATION STYLES------------------------ */
+
+    #subheading-destination{
+        font-size: 28px !important;
+        margin-bottom: 40px;
+
+    }
+
+    #subheading-destination span{
+        color: rgb(55, 55, 58) ;
+        font-weight: bold;
+    }
+
+    #destination-image{
+        height: 345px !important;
+        width: 345px !important;
+        margin: 0 auto;
+    }
+
+    #destination-image img{
+        width: 100%;
+    }
+
+    .navlink-moon{
+        margin-left: 0 !important;
+    }
+
+    .h2-moon{
+        font-family: 'Bellefair', serif;
+        font-size: 100px !important; 
+    }
+
+    .p-moon{
+        font-size: 16px !important;
+        font-weight: 100 !important;
+        width: 100%;
+    }
+
+    .planet-info{
+        max-width: 400px !important;
+    }
+
+    .average-distance{
+        color:rgb(208, 214, 249) !important;
+        font-size: 13px;
+        font-weight: 100;
+    }
+
+    #distance{
+        font-family: 'Bellefair', serif;
+        text-transform: uppercase;
+        font-weight: 100;
+
+    }
+   
+
+
+
+
+
+
+
+
+
+
+  /*------------- MEDIA QUERIES */
+  
+
+@media (max-width:599px){
+    body{
+        position: relative;
+        background-image: url('assets/home/wallpaper3.jpg');
+        background-position:bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    nav{
+        width: 140px !important;
+    }
+
+    button{
+        margin-left: auto;
+    }
+
+    .navbar-backdrop{   
+        position: absolute;
+        top:75px;
+        left: 0;
+        width: 500px;
+        width: 100%;
+        text-align: left;
+        transition: all 0.5s ease;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px) saturate(150%);
+
+    }
+
+    .horizontal-line{
+        display: none;
+    }
+
+    .nav-link{
+        padding:20px;
+        margin-left: 20px;
+       
+    }
+
+    .nav-link:hover{
+        border:none;
+    }
+
+    p{
+       color: rgb(208, 214, 249)
+    }
+    
+    .logo{
+        padding: 0 !important;
+        margin-left: 10px !important;
+    }
+
+    .explore-link{
+        height:100px;
+        width:  100px;
+
+        
+    }
+
+    h1{
+        font-size: 70px !important;
+    }
+
+    /*------------- destination mobile view */
+
+
+    #subheading-destination{
+        font-size: 1.25rem !important;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-left: 0 !important;
+
+    }
+
+    #subheading-destination span{
+        color: rgb(55, 55, 58) ;
+        font-weight: bold;
+    }
+
+    #destination-image{
+        height: 200px !important;
+        width: 200px !important;
+        margin: 0 auto;
+    }
+
+    #destination-image img{
+        width: 100%;
+    }
+
+    .navlink-moon{
+        margin-left: 0 !important;
+    }
+
+    .h2-moon{
+        font-family: 'Bellefair', serif;
+        font-size: 100px !important; 
+    }
+
+    .p-moon{
+        font-size: 16px !important;
+        font-weight: 100 !important;
+        width: 100%;
+    }
+
+    .planet-info{
+        max-width: 400px !important;
+    }
+
+    .average-distance{
+        color:rgb(208, 214, 249) !important;
+        font-size: 13px;
+        font-weight: 100;
+    }
+
+    #distance{
+        font-family: 'Bellefair', serif;
+        text-transform: uppercase;
+        font-weight: 100;
+
+    }
+
+    .destination-nav{
+        display: flex;
+    }
+
+    .nav-toggler-destination{
+        display: none;
+    }
+   
+
+
+}
+
+
+@media (min-width:600px){
+   
+    .navbar-toggler{
+        display: none;
+    }
+
+    .navbar-backdrop{
+        display: flex !important;
+        -webkit-backdrop-filter: blur(10px);
+         backdrop-filter: blur(10px) saturate(150%);
+    }
+
+    .navbar-nav{
+        flex-direction: row  !important;
+    }
+
+    .horizontal-line{
+        display: none;
+    }
+
+    /* .navbar-collapse{   
+        position: absolute;
+        top:75px;
+        right: 0;
+        width: 100%;
+        z-index: 99999;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        -webkit-backdrop-filter: blur(10px);
+         backdrop-filter: blur(10px) saturate(150%);
+    } */
+
+    .nav-link-index{
+        padding:20px;
+        margin-left: 20px;
+           
+    }
+    
+    .nav-link:hover{
+        border:none;
+    }
+    
+    p{
+        font-size: 20px !important;
+    }
+    
+}
+
+@media (min-width:992px){
+    .navigation-bar{
+       width: 1000px !important;
+        border-bottom-color: transparent !important;
+    -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(15px) saturate(150%);
+    }
+
+    .nav-container{
+        padding: 0 !important;
+    }
+    
+    .horizontal-line{
+        display: block;
+    }
+
+    .explore-btn{
+        position: absolute;
+        bottom: 250px;
+        right: 130px;
+        height: 150px;
+        width: 150px;
+    }
+
+    .right-col{
+        height: auto;
+    }
+
+    p{
+        color:rgb(208, 214, 249)
+    }
+
+}
+
+
